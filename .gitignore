@@ -1,0 +1,22 @@
+# Ignore environment variable files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Compiled files
+dist/
+build/
+
+# OS generated files
+.DS_Store
+Thumbs.db

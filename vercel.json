@@ -1,0 +1,17 @@
+{
+    "builds": [
+      {
+        "src": "index.jsx",
+        "use": "@vercel/static-build",
+        "config": { "distDir": "build" }
+      },
+      {
+        "src": "src/api/*.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      { "src": "/api/(.*)", "dest": "/src/api/$1.js" },
+      { "src": "/(.*)", "dest": "/index.html" }
+    ]
+  }
