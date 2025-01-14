@@ -4,13 +4,12 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "echo \"Specify a build command if necessary\"",
-    "test": "jest",
-    "lint": "eslint . --ext js,jsx",
-     "build": "react-scripts build",
-    "format": "prettier --write ."
-    
+    "start": "node server.js", 
+    "dev": "react-scripts start", 
+    "build": "react-scripts build", 
+    "test": "jest", 
+    "lint": "eslint . --ext js,jsx", 
+    "format": "prettier --write ." 
   },
   "keywords": [],
   "author": "",
